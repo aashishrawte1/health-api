@@ -1,0 +1,27 @@
+type Patient {
+    nhi: String!
+    name: String!
+}
+
+type Medication {
+    id: ID!
+    dosage: String!
+}
+
+type Fhir {
+    patient: Patient
+    date: String!
+    medications: [Medication]
+}
+
+type Query {
+  patient(id: ID!): Fhir
+  fhir: [Fhir]
+  # Add other FHIR resource queries here
+}
+
+type Mutation {
+    createFhir(nhi: String!, fhir: Fhir): Fhir.patient
+    updateFhir(nhi: String!, fhir: Fhir): Fhir.patient
+    deleteFhir(nhi: String!): Fhir.patient
+}

@@ -1,0 +1,13 @@
+{
+  "patient": {
+    "nhi": "",
+    "name": ""
+  },
+  "date": "",
+  "medications": [
+    {
+      "id": "",
+      "dosage": ""
+    }
+  ]
+}

@@ -26,6 +26,6 @@ import { FhirResolver } from './fhir/fhir.resolver';
     FhirModule,
   ],
   controllers: [AppController, FhirController],
-  providers: [AppService, FhirService],
+  providers: [AppService, FhirService, FhirResolver],
 })
 export class AppModule {}

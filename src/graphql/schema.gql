@@ -21,7 +21,7 @@ type Query {
 }
 
 type Mutation {
-    createFhir(nhi: String!, fhir: Fhir): Fhir.patient
-    updateFhir(nhi: String!, fhir: Fhir): Fhir.patient
-    deleteFhir(nhi: String!): Fhir.patient
+    createFhir(nhi: String!, fhir: Fhir): Fhir
+    updateFhir(nhi: String!, fhir: Fhir): Fhir
+    deleteFhir(nhi: String!): Fhir
 }
